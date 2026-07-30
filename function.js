@@ -6,9 +6,7 @@
          remove 
   } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";
 
-const firebaseConfig = {
-    databaseURL: "https://leads-tracker-app-default-rtdb.europe-west1.firebasedatabase.app/"
-}
+
 const firebaseConfig = {
   apiKey: "AIzaSyCNv-XOehSDf8OPtl2UpbBVnzN76frFRb4",
   authDomain: "leads-tracker-app-44d59.firebaseapp.com",
