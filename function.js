@@ -14,7 +14,7 @@ const firebaseConfig = {
   storageBucket: "leads-tracker-app-44d59.firebasestorage.app",
   messagingSenderId: "487274490195",
   appId: "1:487274490195:web:305e7ddb4af507eea459a6",
-  measurementId: "G-3Q36PFPEYZ"
+  measurementId: "G-3Q36PFPEYZ",
  databaseURL: "https://leads-tracker-app-44d59.firebaseapp.com"
 };
 
