@@ -1,10 +1,5 @@
-
-
-import { initializeApp } from "firebase/app";
-import { getDatabase, ref, set, push,
-         onValue,
-         remove  } from "firebase/database";
-
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+import { getDatabase, ref, set, push, onValue, remove } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-database.js";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   databaseURL: "https://leads-tracker-app-44d59-default-rtdb.firebaseio.com/"
@@ -12,8 +7,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Initialize Realtime Database and get a reference to the service
 const database = getDatabase(app)
 const referenceInDB = ref(database, "leads")
 
