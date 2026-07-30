@@ -1,5 +1,5 @@
  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
-  import { getDatabase,
+  import {getAnalytics,
     ref,
          push,
          onValue,
@@ -9,10 +9,20 @@
 const firebaseConfig = {
     databaseURL: "https://leads-tracker-app-default-rtdb.europe-west1.firebasedatabase.app/"
 }
+const firebaseConfig = {
+  apiKey: "AIzaSyCNv-XOehSDf8OPtl2UpbBVnzN76frFRb4",
+  authDomain: "leads-tracker-app-44d59.firebaseapp.com",
+  projectId: "leads-tracker-app-44d59",
+  storageBucket: "leads-tracker-app-44d59.firebasestorage.app",
+  messagingSenderId: "487274490195",
+  appId: "1:487274490195:web:305e7ddb4af507eea459a6",
+  measurementId: "G-3Q36PFPEYZ"
+};
 
-const app = initializeApp(firebaseConfig)
-const database = getDatabase(app)
-const referenceInDB = ref(database, "leads")
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const referenceInDB = ref(analytics, "leads")
 
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
