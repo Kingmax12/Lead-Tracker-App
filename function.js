@@ -1,22 +1,21 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js";
-  import { getAnalytics,
-          ref,
-         push,
+
+
+import { initializeApp } from "firebase/app";
+import { getDatabase, ref, set, push,
          onValue,
-         remove } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+         remove  } from "firebase/database";
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    databaseURL: "https://leads-tracker-app-44d59-default-rtdb.firebaseio.com/"
-  };
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  databaseURL: "https://leads-tracker-app-44d59-default-rtdb.firebaseio.com/"
+};
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-const referenceInDB = ref(analytics, "leads")
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Initialize Realtime Database and get a reference to the service
+const database = getDatabase(app)
+const referenceInDB = ref(database, "leads")
 
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
