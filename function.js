@@ -10,13 +10,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.16.0/fireba
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
-    apiKey: "AIzaSyCNv-XOehSDf8OPtl2UpbBVnzN76frFRb4",
-    authDomain: "leads-tracker-app-44d59.firebaseapp.com",
-    projectId: "leads-tracker-app-44d59",
-    storageBucket: "leads-tracker-app-44d59.firebasestorage.app",
-    messagingSenderId: "487274490195",
-    appId: "1:487274490195:web:01f4f2f812709213a459a6",
-    measurementId: "G-STW01Q05HY"
+    databaseURL: "https://leads-tracker-app-44d59-default-rtdb.firebaseio.com/"
   };
 
   // Initialize Firebase
